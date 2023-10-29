@@ -1,0 +1,328 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.title {
+  text-align: center;
+}
+.title h1 {
+  color: #0b254b;
+  text-align: center;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 57.6px;
+  letter-spacing: -0.9px;
+  font-family: "Arvo", serif;
+}
+.title p {
+  color: #5e6e89;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 27.6px;
+  letter-spacing: 0.1px;
+}
+button {
+  border: none;
+  outline: none;
+  color: #fff;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 20.645px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding: 8px 44px;
+  border-radius: 4px;
+  background-color: black;
+  margin-bottom: 15px;
+}
+/* nav start */
+nav {
+  background-color: #ebf6f1;
+}
+nav img {
+  width: 70px;
+  height: 70px;
+}
+nav ul {
+  gap: 30px;
+}
+nav ul li .nav-link {
+  font-size: 18px;
+  font-weight: 500;
+}
+nav .user a {
+  color: #000;
+  text-decoration: none;
+  display: inline-block;
+  margin-left: 12px;
+}
+/* nav end */
+/*  banner  start*/
+#banner {
+  padding: 175px 0;
+  background: url(../img/banner.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#banner .wrapper {
+  background-color: rgba(240, 248, 255, 0.32);
+  /* filter: blur(10px); */
+  width: 730px;
+  height: 349px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#banner .wrapper h1 {
+  color: #fff;
+  text-align: center;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 57.6px; /* 144% */
+}
+#banner .wrapper p {
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25.6px;
+}
+
+/*  banner end */
+/*  trendy  start */
+#trendy,
+#hot-sell,
+#men,
+#women,
+#kid,
+#feedback {
+  padding: 115px 0;
+}
+.card-item {
+  background: #f7f8fa;
+  box-shadow: 0px 13px 27px -2px rgba(0, 0, 0, 0.13);
+  -webkit-box-shadow: 0px 13px 27px -2px rgba(0, 0, 0, 0.13);
+  -moz-box-shadow: 0px 13px 27px -2px rgba(0, 0, 0, 0.13);
+}
+
+#trendy .card-item img,
+#men .card-item img,
+#women .card-item img,
+#kid .card-item img {
+  width: 100%;
+}
+.card-item .details {
+  background: #fff;
+  padding: 10px 26px;
+}
+.card-item .details h4 {
+  color: #1d293f;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 27.6px; /* 172.5% */
+  letter-spacing: -0.9px;
+}
+.price {
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+}
+.cards {
+  margin-top: 60px;
+}
+.card-item .details a {
+  color: #000;
+  font-size: 20px;
+}
+.card-item .details span {
+  color: #56b280;
+  text-align: right;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 27.6px; /* 138% */
+}
+.row2 {
+  margin-top: 20px;
+}
+
+/*   trendy end */
+/* hot sell start */
+#hot-sell,
+#women,
+#feedback {
+  background: rgba(86, 178, 128, 0.1);
+}
+#hot-sell .back {
+  background-color: #d4ebf5;
+}
+#hot-sell .hot-title {
+  margin-top: 100px;
+}
+#hot-sell .hot-title h1 {
+  color: #1d252c;
+  font-family: Poppins;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 46.6px;
+  letter-spacing: -0.9px;
+}
+#hot-sell .hot-title p {
+  color: var(--green, #81d1f0);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22.8px;
+}
+#hot-sell ul {
+  margin: 38px 0;
+  color: #000;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28.8px;
+}
+/* hot sell end */
+/* feedback start */
+#feedback .rating {
+  color: rgb(179, 232, 232);
+  text-align: center;
+}
+#feedback .details {
+  text-align: center;
+}
+#feedback .card-item {
+  margin-top: 60px;
+}
+#feedback .cus {
+  margin: 0 auto;
+  display: block;
+}
+#feedback .details h4 {
+  color: #1d293f;
+  text-align: center;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28.8px; /* 130.909% */
+}
+#feedback .details p {
+  color: #7c8087;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+/* feedback  end */
+/* * =======================Footer start=================== --> */
+footer {
+  background: #000;
+  padding: 100px 0;
+}
+footer .title h1 {
+  color: #fff;
+}
+footer .blank {
+  margin-top: 5px;
+  width: 100%;
+  border-radius: 2px;
+  border: 2px solid var(--Text-color, #f4f0f0);
+}
+footer .com-logo {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+}
+footer .shop-info {
+  margin-top: 30px;
+}
+footer img {
+  height: 100px;
+  width: 100px;
+}
+footer .com-logo h1 {
+  width: 250px;
+  color: #f7f8fa;
+  margin-left: 15px;
+}
+footer h5 {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22.8px; /* 142.5% */
+  letter-spacing: -0.5px;
+}
+/* footer .right {
+  margin-top: 50px;
+} */
+footer .right h4 {
+  color: #2030e1;
+  font-size: 20px;
+  font-weight: 500;
+  /* text-align: center; */
+  line-height: 28.8px; /* 180% */
+}
+
+footer .right ul {
+  padding: 0;
+}
+footer .right ul li {
+  list-style-type: none;
+}
+footer .right ul li a {
+  text-decoration: none;
+  color: #e1e1e1;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28.8px;
+  /* display: inline-block;
+    margin: 0 auto; */
+}
+/* copyright */
+.copyright {
+  padding: 15px 0;
+}
+.copyright p {
+  color: #5e6e89;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px; /* 175% */
+  margin-bottom: 0px;
+}
+.copyright .design {
+  text-align: right;
+  /* background-color: red; */
+  color: #5e6e89;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+}
+/* copyright end */
